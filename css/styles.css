@@ -1,0 +1,173 @@
+.landing-page {
+    background-color: #5D008F;
+    color: #5D008F;
+}
+
+.landing-page a {
+    color: #5D008F;
+    text-decoration: none;
+}
+
+.landing-page a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.landing-page-container{
+    background-color: white;
+    height: 80%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding-bottom: 0px;
+    padding: 10px;
+}
+
+.landing-nav {padding: 30px;}
+
+
+.landing-main-content {
+    max-width: 460px;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.searchbar {
+    margin: auto;
+    max-width: 90%;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    border-bottom: 2px solid #5D008F;
+}
+
+.searchbar input[type=text] {
+    padding-right: 3px;
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    outline: none;
+    border: 0;
+    height: 95%;
+    width: 95%;
+}
+
+
+.searchbar ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #5D008F;
+    opacity: 1;
+    /* Firefox */
+}
+
+.searchbar input[type=text] :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #5D008F;
+}
+
+.searchbar input[type=text] ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #5D008F;
+}
+
+.searchbar button {
+    border: 0;
+    background-color: white;
+    padding-right: 0;
+    padding-left: 0px;
+    color: #5D008F;
+    height: 95%;
+    outline: none;
+    width: 5%;
+}
+
+.searchbar button:active {
+    background-color: #5D008F;
+    color: white;
+}
+
+.menu {margin-top: 50px;}
+
+.row {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    width: 25%;
+    text-align: center;
+    padding: 0;
+    margin: 10px auto;
+    color: #5D008F;
+
+
+}
+
+.landing-footer{margin-top: 100px;}
+
+.landing-footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+}
+
+.landing-footer-links li {padding: 20px;}
+
+
+/*Beginning of css for content page*/
+.searchbar-container{
+    width: 460px;}
+
+.content-searchbar{
+	
+}
+
+.content-page{
+	margin-top: 50px;
+}
+
+.cd-tab-filter-wrapper {
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.cd-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cd-filter-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 60px;
+  z-index: 3;
+}
+
+.cd-main-content.is-fixed .cd-tab-filter-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cd-main-content.is-fixed .cd-filter {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cd-main-content.is-fixed .cd-filter-trigger {
+  position: fixed;
+}
